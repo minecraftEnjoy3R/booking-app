@@ -22,9 +22,10 @@ function Hero() {
         <h2 className="text-3xl font-bold sm:text-4xl"><span className='text-primary'>Be like Erwin</span></h2>
 
         <p className="mt-4 text-gray-600">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic atque tenetur quis
-          eius quos ea neque sunt, accusantium soluta minus veniam tempora deserunt? Molestiae eius
-          quidem quam repellat.
+        Erwin Smith, the leader of the Survey Corps in "Attack on Titan,"
+        embodied the indomitable spirit of a true hero. Fearlessly leading his squad to the boundaries of desperate struggle,
+        he became the epitome of resolve and strength.
+        His heroic feat became a symbol of unwavering pursuit of freedom in the face of deadly titans..
         </p>
 
        <Button className="mt-10">Explore Now</Button>
