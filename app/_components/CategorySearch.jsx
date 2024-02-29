@@ -2,11 +2,12 @@
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Search } from 'lucide-react'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import GlobalApi from '../_utils/GlobalApi'
 
 function CategorySearch() {
 
+  const [categoryList,setCategoryList]=useState([]);
   useEffect(()=>{
     getCategoryList()
   },[])
@@ -14,6 +15,7 @@ function CategorySearch() {
   const getCategoryList=()=>{
     GlobalApi.getCategory().then(resp=>{
       console.log(resp.data.data);
+      setCategoryList(resp.data.data);
     })
 
   }
@@ -29,6 +31,13 @@ function CategorySearch() {
         <Search className='h-4 w-4 mr-2'/>
         Search</Button>
         </div>
+
+      {/* Display List */}
+      {categoryList.map((item,index)=>(
+        <div>
+          {/* <Image src={item.attributes?.data.attributes?.url}/> */}
+          </div>
+      ))}
 
     </div>
   )
