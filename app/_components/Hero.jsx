@@ -22,10 +22,11 @@ function Hero() {
         <h2 className="text-3xl font-bold sm:text-4xl"><span className='text-primary'>Find your characher</span></h2>
 
         <p className="mt-4 text-gray-600">
-        Erwin Smith, the leader of the Survey Corps in "Attack on Titan,"
-        embodied the indomitable spirit of a true hero. Fearlessly leading his squad to the boundaries of desperate struggle,
-        he became the epitome of resolve and strength.
-        His heroic feat became a symbol of unwavering pursuit of freedom in the face of deadly titans..
+        In the world of anime, characters are reflections of our own aspirations and emotions.
+        From strong-willed heroes to those searching for their destiny,
+        they resemble us, designed to overcome life's challenges.
+        Associating ourselves with them allows us to find inspiration and understanding,
+        immersing in their stories and discovering new facets of strength and resilience within ourselves.
         </p>
 
        <Button className="mt-10">Explore Now</Button>
