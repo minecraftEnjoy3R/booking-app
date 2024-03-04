@@ -4,6 +4,7 @@ import { Input } from '@/components/ui/input'
 import { Search } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
 import GlobalApi from '../_utils/GlobalApi'
+import Image from 'next/image'
 
 function CategorySearch() {
 
@@ -32,13 +33,14 @@ function CategorySearch() {
         Search</Button>
         </div>
 
-      {/* Display List */}
+      {/* Display List of Category */}
       {categoryList.map((item,index)=>(
-        <div>
-          <Image src={[0].attributes.blogs1.data[0].attributes.url}
-          alt='icon'
+        <div className='flex justify-between'>
+          <Image src={item.data.attributes.blogs1.data[0].attributes.url.url}
+          alt='blog'
           width={261}
           height={193}
+          onError={(e) => console.error("Error loading image:", e)}
           />
           </div>
       ))}
