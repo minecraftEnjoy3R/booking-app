@@ -35,7 +35,11 @@ function CategorySearch() {
       {/* Display List */}
       {categoryList.map((item,index)=>(
         <div>
-          {/* <Image src={item.attributes?.data.attributes?.url}/> */}
+          <Image src={[0].attributes.blogs1.data[0].attributes.url}
+          alt='icon'
+          width={261}
+          height={193}
+          />
           </div>
       ))}
 
